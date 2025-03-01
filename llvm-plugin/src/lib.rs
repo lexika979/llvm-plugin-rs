@@ -312,17 +312,6 @@ pub use llvm_plugin_macros::*;
 #[cfg(all(target_os = "windows", feature = "llvm10-0"))]
 compile_error!("LLVM 10 not supported on Windows");
 
-#[cfg(all(
-    target_os = "windows",
-    any(
-        all(feature = "win-link-opt", feature = "win-link-lld"),
-        all(not(feature = "win-link-opt"), not(feature = "win-link-lld"))
-    )
-))]
-compile_error!(
-    "Either `win-link-opt` feature or `win-link-lld` feature
-    is needed on Windows (not both)."
-);
 
 // Taken from llvm-sys source code.
 //
