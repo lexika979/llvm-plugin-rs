@@ -32,7 +32,7 @@ llvm14-0 = ["inkwell/llvm14-0-no-llvm-linking"]
 llvm15-0 = ["inkwell/llvm15-0-no-llvm-linking"]
 llvm16-0 = ["inkwell/llvm16-0-no-llvm-linking"]
 llvm17-0 = ["inkwell/llvm17-0-no-llvm-linking"]
-llvm18-1 = ["inkwell/llvm18-0-no-llvm-linking"]
+llvm18-1 = ["inkwell/llvm18-0-prefer-static"]
 
 target-x86 = ["inkwell/target-x86"]
 target-arm = ["inkwell/target-arm"]
